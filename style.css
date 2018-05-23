@@ -1,0 +1,27 @@
+* {
+    background-color: lightsalmon;
+}
+
+body {
+    font-family: Georgia, serif;
+    color: darkblue;    
+}
+
+.highlight {
+    color: green;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+#salesPerHour {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    color:  darkred;
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+
+
+}
+
+
