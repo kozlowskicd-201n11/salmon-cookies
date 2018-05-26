@@ -13,6 +13,25 @@
     </header>
     <table id='salesTable'></table>
     <p id="total"></p>
+    <form id="storeForm">
+        <fieldset>
+            <legend>Add a Location</legend>
+
+            <label for="storeName">Name of Location</label>
+            <input name="storeName" type="text"/>
+            
+            <label for="minCust">Minimum Customers per Hour</label>
+            <input name="minCust" type="number"/>
+            
+            <label for="maxCust">Maximum Custopers per Hour</label>
+            <input name="maxCust" type="number"/>
+
+            <label for="avgCookies">Average # Cookies per Sale</label>
+            <input name="avgCookies" type="number"/>
+
+            <button type="submit">Add Store</button>
+        </fieldset>
+    </form>
     <script src="app.js"></script>
 </body>
 </html>

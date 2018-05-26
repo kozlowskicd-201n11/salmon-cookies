@@ -41,7 +41,6 @@ function makeAllLocations() {
 
 makeAllLocations();
 
-var render = function() {
     storeHours.unshift('Store Name');
     storeHours.push('Daily Totals');
     for (var i = 0; i < allStores.length; i++) {
@@ -67,13 +66,21 @@ var render = function() {
     for (var i = 0; i < allStores.length; i++) {
         insertTableRow(allStores[i].cookiesSoldPerHour);
     }
+
+    var pEl = document.getElementById("total");
+    pEl.textContent = "Total number a cookies needed for the day: " + totalTotalCookies;
+
+var storeForm = document.getElementById("storeForm");
+function addNewStoreFunc(event) {
+    event.preventDefault();
+    if (!event.target.storeName.value || !event.target.minCust.value) {
+    return alert("Fields on the form cannot remain blank.  Please try again.");
+    }
+    else {
+        new MakeLocation(event.target.storeName.value, event.target.minCust.value, event.target.maxCust.value, event.target.avgCookies.value);
+        
+    }
+
 }
-
-render();
-
-var pEl = document.getElementById("total");
-pEl.textContent = "Total number a cookies needed for the day: " + totalTotalCookies;
-
-
-
+storeForm.addEventListener('submit', addNewStoreFunc);
 
