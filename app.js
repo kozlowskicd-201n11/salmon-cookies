@@ -74,7 +74,10 @@ var storeForm = document.getElementById("storeForm");
 function addNewStoreFunc(event) {
     event.preventDefault();
     if (!event.target.storeName.value || !event.target.minCust.value || !event.target.maxCust.value || !event.target.avgCookies.value) {
-    return alert("Fields on the form cannot remain blank.  Please try again.");
+        return alert("Fields on the form cannot remain blank.  Please try again.");
+    }
+    else if (isNaN(event.target.minCust.value) || isNaN(event.target.maxCust.value) || isNaN(event.target.avgCookies.value)) {
+        return alert("Min, Max, and Avg require numbers.  Numerals only, please!");
     }
     else {
         new MakeLocation(event.target.storeName.value, event.target.minCust.value, event.target.maxCust.value, event.target.avgCookies.value);
