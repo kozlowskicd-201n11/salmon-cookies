@@ -3,6 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
     <title>Salmon Cookies</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />   
 </head>
 <body>
@@ -13,9 +14,9 @@
     </header>
     <table id='salesTable'></table>
     <p>Total number of cookies needed for the day: </p><p id="total"></p>
-    <form id="storeForm">
+    <div id="storeForm"><form>
         <fieldset>
-            <legend>Add a Location</legend>
+            <legend id="formHead">Add a Location</legend>
 
             <label for="storeName">Name of Location</label>
             <input name="storeName" type="text"/>
@@ -31,7 +32,7 @@
         </br>
             <button id="button" type="submit">Add Store</button>
         </fieldset>
-    </form>
+    </form></div>
     <script src="app.js"></script>
 </body>
 </html>
