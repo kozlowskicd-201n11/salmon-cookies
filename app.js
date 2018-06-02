@@ -3,6 +3,7 @@
 var storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', 'noon', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm'];
 var totalCookiesPerHour = 0;
 var totalTotalCookies = 0;
+var allPerHour = [];
 var allStores = [];
 
 function MakeLocation(storeName, minCustPerHour, maxCustPerHour, avgSoldPerHour) {
@@ -15,12 +16,12 @@ function MakeLocation(storeName, minCustPerHour, maxCustPerHour, avgSoldPerHour)
     this.totalCookies = 0;
     this.makeCustomers = function() {
         for(var i = 0; i < 15; i++) {
-            this.custPerHour.push(Math.round(Math.random() * (this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour))
+            this.custPerHour.push(Math.floor(Math.random() * (this.maxCustPerHour - this.minCustPerHour) + this.minCustPerHour))
         }
     }
     this.makeSales = function() {
         for (var ii = 0; ii < 15; ii++) {
-            this.cookiesSoldPerHour.push(Math.round(this.custPerHour[ii] * this.avgSoldPerHour))
+            this.cookiesSoldPerHour.push(Math.floor((this.custPerHour[ii] + 1) * this.avgSoldPerHour));
             this.totalCookies += this.cookiesSoldPerHour[ii];  
         }
         totalTotalCookies += this.totalCookies;
@@ -28,6 +29,7 @@ function MakeLocation(storeName, minCustPerHour, maxCustPerHour, avgSoldPerHour)
     this.makeCustomers();
     this.makeSales();
     allStores.push(this);
+    console.log(this);
 }
 
 function makeAllLocations() {
@@ -69,6 +71,7 @@ for (var i = 0; i < allStores.length; i++) {
 var pEl = document.getElementById("total");
 pEl.textContent = totalTotalCookies;
 
+// FORM HANDLER
 var storeForm = document.getElementById("storeForm");
 
 function addNewStoreFunc(event) {

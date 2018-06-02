@@ -3,21 +3,134 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One" rel="stylesheet">
     <title>Salmon Cookies</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />   
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="indexStyle.css" />   
 </head>
 <body>
-    <header class="highlight">
-        <h1>Salmon Cookies</h1>
-        <h2>Cookies sold per location</h2>
+    <header>
+        <title>Salmon Cookies!</title>
+        <div>
+            <h1>Salmon Cookies</h1>
+            <img src="img/salmon.png" />
+            <h2>Locally Sourced</h2>
+            <h2>Locally Made</h2>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href='#p1'>About Us</a>
+                </li>
+                <li>
+                    <a href='#locations'>Locations</a>
+                </li>
+                <li>
+                    <a href='#store'>Merchandise</a>
+                </li>
+                <li>
+                    <a href='#events'>Events</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <table id="firstPike">
-        <tr>
-            <td></td>
-        </tr>
-    </table>
-    <div id="text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur maximus vitae ligula vitae luctus. Quisque tempus fringilla dui quis molestie. Donec rutrum, lorem a vulputate condimentum, libero massa rhoncus eros, vitae sagittis urna tellus non purus. Ut condimentum augue elit, nec laoreet risus finibus pulvinar. Aliquam nulla quam, eleifend vitae aliquet sit amet, tincidunt vitae tellus. Donec elementum nibh eget erat sodales, a suscipit lorem venenatis. Ut tincidunt augue odio, a aliquet libero dictum vel. Sed dictum tortor quam, congue dictum mauris ultricies vitae. Mauris a nulla neque. Nam vitae mattis elit, in volutpat tortor. Integer vitae euismod quam, non euismod metus. Sed libero lorem, suscipit quis porttitor sit amet, mattis at lorem. Morbi ac justo feugiat, posuere velit ac, volutpat nunc. Donec pharetra ullamcorper pulvinar. Morbi porttitor magna purus.</p>
-    </div>
+    <main>
+        <h1>About Us!</h1>
+        <div id='p1'>
+            <img src="img/chinook.jpg" />
+            <p>Welcome to the official homepage for Seattle's original Northwest snack, salmon cookies!  We have been producing and distributing salmon cookies locally around the Seattle Metro area since last week, and in that time we have seen a huge increase in demand.   We have to date opened a total of <a href="#locations">five locations</a> to serve everyone's salmon cookie needs.  </p>
+        </div>
+        <div id='p2'>
+            <img src='img/family.jpg' />
+            <p>Salmon cookies are a healthy snack for the whole family!  As their name suggests, our salmon cookies are produced with locally raised Chinook salmon as their number three ingredient, right behind sugar and butter.  There has never, in the history of all time, been a single instance of someone not enjoying a salmon cookie.  Share them far and wide with loved ones and not-so-loved ones alike, and receive the adulation of all!</p>
+        </div>
+        <div id='p3'>
+            <img src="img/fish.jpg" />
+            <p>We have more to offer than delectibal treats, however!  We have fully capitalized on the salmon cookie sensation to bring you a huge line of merchandise through our <a href='#store'>online store,</a> including cookie cutters, fridge magnates, pipe wrenches, longboards, lawn ornaments, pet chew toys, and our exclusive clothing line by Giorgio Armani.  Bulk purchases of cookies are also available for international shipping, so you can enjoy salmon cookies anytime, anywhere!</p>
+        </div>
+        <a id="topPage" href="#top">Return to Top</a>
+        <section id="locations">
+            <h1>Locations</h1>
+            <h2>Click the name of any Salmon Cookies shop to see a map of that location.</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.google.com/maps/place/84+Pike+Pl,+Seattle,+WA+98101">First and Pike</a>
+                        <p>6am - 9pm Daily</p>
+                        <p>84 Pike Pl.</p>
+                        <p>Seattle WA 98101</p>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/17801+International+Blvd,+SeaTac,+WA+98158">SeaTac Airport</a>
+                        <p>6am - 9pm Daily</p>
+                        <p>17801 International Blvd.</p>
+                        <p>SeaTac, WA 98158</p>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/223+Taylor+Ave+N,+Seattle,+WA+98109">Seattle Center</a>
+                        <p>6am - 9pm Daily</p>
+                        <p>223 Taylor Ave. N</p>
+                        <p>Seattle WA, 98109</p>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/851+11th+Ave+E,+Seattle,+WA+98102">Capitol Hill</a>
+                        <p>6am - 9pm Daily</p>
+                        <p>851 11th Ave. E</p>
+                        <p>Seattle, WA 98102</p>
+                    </li>
+                    <li>
+                        <a href="https://www.google.com/maps/place/6023+SW+Stevens+St,+Seattle,+WA+98116">Alki Beach</a>
+                        <p>6am - 9pm Daily</p>
+                        <p>6023 SW Stevens St.</p>
+                        <p>Seattle, WA 98116</p>
+                    </li>
+                </ul>
+        </section>
+        <a id="topPage" href="#top">Return to Top</a>
+        <section id="store">
+            <h1>Salmon Cookie Merch!</h1>
+            <h2>Take a look at some of the great items available in our store!</h2>
+            <ul>
+                <li>
+                    <img src='img/shirt.jpg' />
+                    <h3>Salmon Cookies T-Shirt</h3>
+                    <select>
+                        <option value="XS">X-Small</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                        <option value="XL">X-Large</option>
+                        <option value="XXL">XX-Large</option>
+                    </select>
+                    <button> Add to Cart</button>
+                </li>
+                <li>
+                    <img src='img/cutter.jpeg' />
+                    <h3>Official Cookie Cutter</h3>
+                    <label for="cutters">Qty:</label>
+                    <input name="cutters" type="text" maxLength="2" size="1"/>
+                    <button>Add to Cart</button>
+                </li>
+                <li>
+                    <img src='img/frosted-cookie.jpg' />
+                    <h3>Salmon Cookie Bulk Packs</h3>
+                    <select>
+                        <option value="100">100 Cookies</option>
+                        <option value="500">500 Cookies</option>
+                        <option value="1000">1000 Cookies</option>
+                        <option value="5000">5000 Cookies</option>
+                    </select>
+                    <button>Add to Cart</button>
+                </li>
+                <li>
+                    <a id="storeLink" href='#top'>Click Here To Visit The Salmon Cookies Online Store</a>
+                </li>
+            </ul>
+        </section>
+        <a id="topPage" href="#top">Return to Top</a>
+        <section id="events">
+            <h1>Events</h1>
+            <p>Under Construction... Coming Soon!</p>
+        </section>
+    </main>
+   
    <!-- <script src="app.js"></script> -->
 </body>
 </html>
