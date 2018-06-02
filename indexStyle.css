@@ -27,6 +27,7 @@ header nav ul li {
     margin-top: 52px;
     margin-left: 30px;
 }
+
 /* ABOUT US */
 main h1 {
     font-family: 'Rubik Mono One';
@@ -98,8 +99,8 @@ main div {
     float: right;
     margin: 50px 30px 10px 0px
 }
-/* STORE */
 
+/* STORE */
 #store h1 {
     clear: right;
     font-size: 40px;
@@ -148,3 +149,10 @@ main div {
     margin-bottom: 20px;
 }
 /* FOOTER */
+footer {
+    line-height: 50px;
+    background-color: salmon;
+    float: right;
+    padding: 10px 20px;
+    font-weight: bold;
+}
