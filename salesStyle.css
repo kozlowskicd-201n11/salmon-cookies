@@ -26,7 +26,6 @@ body {
    margin-left: auto;
    margin-right: auto;
    font-family: 'Courier New', monospace;
-
 }
 
 td {
@@ -72,24 +71,41 @@ form {
     margin-right: auto;
     margin-left: auto;
     border-style: solid;
-    background: darkolivegreen;
-    border-color: darkolivegreen;
+    background: #aede5b91;
+    border-color: #aede5b91;
     border-width: 6px;
     display: inline-block;
 }
 
 #button {
-    color: salmon;
-    background: rgb(175, 80, 12)
+    color: white;
+    background: forestgreen;
+    border: 1px white solid;
 }
 
 fieldset {
-    border: 8px solid darkolivegreen;
+    border: 8px solid #aede5b91;
     margin: 0px;
+    background-color: forestgreen;
 }
 
 legend {
     font-weight: 900;
     font-size: 40px;
-    background: darkolivegreen;
+    background: forestgreen;
+    color: white;
+}
+form fieldset label, form fieldset input {
+    background-color: forestgreen;
+    font-size: 20px;
+    color: white;
+}
+form fieldset input {
+    border: 1px white solid;
+}
+a {
+    float: right;
+    margin: 0px 30px 10px 0px;
+    font-size: 20px;
+    font-weight: bold;
 }
