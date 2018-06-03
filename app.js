@@ -16,7 +16,7 @@ function MakeLocation(storeName, minCustPerHour, maxCustPerHour, avgSoldPerHour)
     this.totalCookies = 0;
     this.makeCustomers = function() {
         for(var i = 0; i < 15; i++) {
-            this.custPerHour.push(Math.round(Math.random() * (this.maxCustPerHour - this.minCustPerHour)) + 1);
+            this.custPerHour.push(Math.round(Math.random() * (this.maxCustPerHour - this.minCustPerHour)) + 2);
         }
     }
     this.makeSales = function() {
